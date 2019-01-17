@@ -5,7 +5,7 @@
     },
     map: {
       // app path
-      'app': 'app',
+      'app': 'dist/app',
 
       // angular bundles
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',

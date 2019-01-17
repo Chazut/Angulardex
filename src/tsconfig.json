@@ -9,6 +9,7 @@
     "lib": [ "es2018", "dom" ],
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
+    "outDir": "dist",
     "typeRoots" : ["node_modules/@types"]
   }
 }
