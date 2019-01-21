@@ -12,7 +12,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 49,
     defense: 49,
     speed: 45,
-		picture: "https://img.pokemondb.net/artwork/large/bulbasaur.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
 	},
 	{
 		id: 2,
@@ -25,7 +25,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 62,
     defense: 63,
     speed: 60,
-		picture: "https://img.pokemondb.net/artwork/large/ivysaur.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"
 	},
 	{
 		id: 3,
@@ -38,7 +38,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 82,
     defense: 83,
     speed: 80,
-		picture: "https://img.pokemondb.net/artwork/large/venusaur.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
 	},
 	{
 		id: 4,
@@ -51,7 +51,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 52,
     defense: 43,
     speed: 65,
-		picture: "https://img.pokemondb.net/artwork/large/charmander.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
 	},
 	{
 		id: 5,
@@ -64,7 +64,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 64,
     defense: 58,
     speed: 80,
-		picture: "https://img.pokemondb.net/artwork/large/charmeleon.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png"
 	},
 	{
 		id: 6,
@@ -77,7 +77,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 84,
     defense: 78,
     speed: 100,
-		picture: "https://img.pokemondb.net/artwork/large/charizard.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
 	},
 	{
 		id: 7,
@@ -90,7 +90,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 48,
     defense: 65,
     speed: 43,
-		picture: "https://img.pokemondb.net/artwork/large/squirtle.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
 	},
 	{
 		id: 8,
@@ -103,7 +103,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 63,
     defense: 80,
     speed: 58,
-		picture: "https://img.pokemondb.net/artwork/large/wartortle.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png"
 	},
 	{
 		id: 9,
@@ -116,7 +116,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 83,
     defense: 100,
     speed: 78,
-		picture: "https://img.pokemondb.net/artwork/large/blastoise.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png"
 	},
 	{
 		id: 10,
@@ -129,7 +129,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 30,
     defense: 35,
     speed: 45,
-		picture: "https://img.pokemondb.net/artwork/large/caterpie.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png"
 	},
 	{
 		id: 11,
@@ -142,7 +142,7 @@ export const POKEMONS: Pokemon[] = [
 		attack: 20,
     defense: 55,
     speed: 30,
-		picture: "https://img.pokemondb.net/artwork/large/metapod.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png"
 	},
 	{
 		id: 12,
@@ -155,6 +155,6 @@ export const POKEMONS: Pokemon[] = [
 		attack: 45,
     defense: 50,
     speed: 70,
-		picture: "https://img.pokemondb.net/artwork/large/butterfree.jpg"
+		picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png"
 	}
 ];

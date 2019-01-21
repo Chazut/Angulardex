@@ -10,16 +10,19 @@ const core_1 = require("@angular/core");
 const mock_pokemons_1 = require("./mock-pokemons");
 let AppComponent = class AppComponent {
     constructor() {
-        this.name = 'Angular';
+        this.title = "Angulardex";
     }
     ngOnInit() {
         this.pokemons = mock_pokemons_1.POKEMONS;
+    }
+    selectPokemon(pokemon) {
+        alert("You clicked on " + pokemon.name);
     }
 };
 AppComponent = __decorate([
     core_1.Component({
         selector: 'angulardex-app',
-        template: `<h1>Hello {{name}}</h1>`,
+        templateUrl: `./app/app.component.html`,
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
