@@ -1,2 +1,4 @@
 # Angulardex
-Pokedex avec Angular 6
+Pokedex avec Angular
+
+Projet Web - Jérémy Jagut
