@@ -9,6 +9,7 @@
         <div class="card-stacked">
           <div class="card-content">
             <p align="center"><b>{{ pokemon.name }}</b></p>
+            <span *ngFor='let type of pokemon.types' class='{{ type | pokemonTypeColor}}'>{{ type }}</span>
           </div>
         </div>
       </div>

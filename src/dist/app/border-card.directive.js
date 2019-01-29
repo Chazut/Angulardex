@@ -15,7 +15,7 @@ let BorderCardDirective = class BorderCardDirective {
         this.el = el;
         this.initialColor = '#f5f5f5';
         this.defaultColor = '#009688';
-        this.defaultHeight = 500;
+        this.defaultHeight = 400;
         this.setBorder(this.initialColor);
         this.setHeight(this.defaultHeight);
     }
