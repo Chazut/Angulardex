@@ -1,0 +1,60 @@
+<div *ngIf="pokemon" class="row">
+<div class="col s12 m8 offset-m2">
+<h2 class="header center">{{ pokemon.name }}</h2>
+<div class="card horizontal hoverable">
+  <div class="card-image">
+    <img [src]="pokemon.picture">
+  </div>
+  <div class="card-stacked">
+    <div class="card-content">
+      <table class="bordered striped">
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td><strong>{{ pokemon.name }}</strong></td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td><strong>{{ pokemon.description }}</strong></td>
+          </tr>
+          <tr>
+            <td>Types</td>
+            <td>
+              <span *ngFor="let type of pokemon.types" class="{{ type | pokemonTypeColor }}">{{ type }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Height</td>
+            <td><strong>{{ pokemon.height }}</strong></td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td><strong>{{ pokemon.weight }}</strong></td>
+          </tr>
+          <tr>
+            <td>Health Points</td>
+            <td><strong>{{ pokemon.hp }}</strong></td>
+          </tr>
+          <tr>
+            <td>Attack</td>
+            <td><strong>{{ pokemon.attack }}</strong></td>
+          </tr>
+          <tr>
+            <td>Defense</td>
+            <td><strong>{{ pokemon.defense }}</strong></td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td><strong>{{ pokemon.speed }}</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card-action">
+      <a (click)="goBack()">Back</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<h4 *ngIf='!pokemon' class="center">No pokemon to display !</h4>

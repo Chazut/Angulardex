@@ -7,21 +7,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
-const platform_browser_1 = require("@angular/platform-browser");
-const app_component_1 = require("./app.component");
-const app_routing_module_1 = require("./app-routing.module");
-const border_card_directive_1 = require("./border-card.directive");
-const pokemon_type_color_pipe_1 = require("./pokemon-type-color.pipe");
+const router_1 = require("@angular/router");
 const list_pokemon_component_1 = require("./list-pokemon.component");
 const detail_pokemon_component_1 = require("./detail-pokemon.component");
-let AppModule = class AppModule {
+const appRoutes = [
+    { path: 'pokemons', component: list_pokemon_component_1.ListPokemonComponent },
+    { path: 'pokemon/:id', component: detail_pokemon_component_1.DetailPokemonComponent },
+    { path: '', redirectTo: 'pokemons', pathMatch: 'full' }
+];
+let AppRoutingModule = class AppRoutingModule {
 };
-AppModule = __decorate([
+AppRoutingModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, app_routing_module_1.AppRoutingModule],
-        declarations: [app_component_1.AppComponent, border_card_directive_1.BorderCardDirective, pokemon_type_color_pipe_1.PokemonTypeColorPipe, list_pokemon_component_1.ListPokemonComponent, detail_pokemon_component_1.DetailPokemonComponent],
-        bootstrap: [app_component_1.AppComponent]
+        imports: [
+            router_1.RouterModule.forRoot(appRoutes)
+        ],
+        exports: [
+            router_1.RouterModule
+        ]
     })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], AppRoutingModule);
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app-routing.module.js.map

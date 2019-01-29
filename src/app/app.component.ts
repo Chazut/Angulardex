@@ -10,14 +10,5 @@ import { POKEMONS } from './mock-pokemons';
 })
 
 export class AppComponent implements OnInit {
-  private pokemons: Pokemon[];
-  private title: string = "Angulardex";
 
-  ngOnInit(){
-    this.pokemons = POKEMONS;
-  }
-
-  selectPokemon(pokemon: Pokemon){
-    alert("You clicked on " + pokemon.name);
-  }
 }
