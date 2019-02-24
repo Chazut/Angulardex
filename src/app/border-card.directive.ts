@@ -8,11 +8,11 @@ export class BorderCardDirective {
 
   private initialColor: string = '#f5f5f5';
   private defaultColor: string = '#009688';
-  private defaultHeight: number = this.weight;
+  private defaultHeight: number = 500;
 
 	constructor(private el: ElementRef) {
 		this.setBorder(this.initialColor);
-		this.setHeight(this.defaultHeight);
+		//this.setHeight(this.defaultHeight);
 	}
 
   @Input('pkmnBorderCard') borderColor: string;

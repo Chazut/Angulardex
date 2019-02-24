@@ -14,12 +14,13 @@ const border_card_directive_1 = require("./border-card.directive");
 const pokemon_type_color_pipe_1 = require("./pokemon-type-color.pipe");
 const list_pokemon_component_1 = require("./list-pokemon.component");
 const detail_pokemon_component_1 = require("./detail-pokemon.component");
+const page_not_found_component_1 = require("./page-not-found.component");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, app_routing_module_1.AppRoutingModule],
-        declarations: [app_component_1.AppComponent, border_card_directive_1.BorderCardDirective, pokemon_type_color_pipe_1.PokemonTypeColorPipe, list_pokemon_component_1.ListPokemonComponent, detail_pokemon_component_1.DetailPokemonComponent],
+        declarations: [app_component_1.AppComponent, border_card_directive_1.BorderCardDirective, pokemon_type_color_pipe_1.PokemonTypeColorPipe, list_pokemon_component_1.ListPokemonComponent, detail_pokemon_component_1.DetailPokemonComponent, page_not_found_component_1.PageNotFoundComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

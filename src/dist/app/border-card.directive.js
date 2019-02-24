@@ -15,9 +15,9 @@ let BorderCardDirective = class BorderCardDirective {
         this.el = el;
         this.initialColor = '#f5f5f5';
         this.defaultColor = '#009688';
-        this.defaultHeight = this.weight;
+        this.defaultHeight = 500;
         this.setBorder(this.initialColor);
-        this.setHeight(this.defaultHeight);
+        //this.setHeight(this.defaultHeight);
     }
     onMouseEnter() {
         this.setBorder(this.borderColor || this.defaultColor);
