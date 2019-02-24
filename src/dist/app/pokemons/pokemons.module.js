@@ -13,6 +13,7 @@ const list_pokemon_component_1 = require("./list-pokemon.component");
 const detail_pokemon_component_1 = require("./detail-pokemon.component");
 const border_card_directive_1 = require("./border-card.directive");
 const pokemon_type_color_pipe_1 = require("./pokemon-type-color.pipe");
+const pokemons_service_1 = require("./pokemons.service");
 let PokemonsModule = class PokemonsModule {
 };
 PokemonsModule = __decorate([
@@ -27,7 +28,7 @@ PokemonsModule = __decorate([
             border_card_directive_1.BorderCardDirective,
             pokemon_type_color_pipe_1.PokemonTypeColorPipe
         ],
-        providers: []
+        providers: [pokemons_service_1.PokemonsService]
     })
 ], PokemonsModule);
 exports.PokemonsModule = PokemonsModule;
