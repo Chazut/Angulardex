@@ -22,6 +22,9 @@ let PokemonsService = class PokemonsService {
             }
         }
     }
+    getPokemonTypes() {
+        return ['Normal', 'Fire', 'Water', 'Electric', 'Grass', 'Ice', 'Fighting', 'Poison', 'Ground', 'Flying', 'Psychic', 'Bug', 'Rock', 'Ghost', 'Dragon', 'Dark', 'Steel', 'Fairy'];
+    }
 };
 PokemonsService = __decorate([
     core_1.Injectable()

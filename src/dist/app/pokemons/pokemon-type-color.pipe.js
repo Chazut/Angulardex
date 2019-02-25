@@ -18,19 +18,52 @@ let PokemonTypeColorPipe = class PokemonTypeColorPipe {
                 color = 'blue lighten-1';
                 break;
             case 'Grass':
-                color = 'green lighten-1';
+                color = 'light-green lighten-1';
                 break;
             case 'Bug':
-                color = 'brown lighten-1';
+                color = 'lime darken-1';
                 break;
             case 'Normal':
-                color = 'grey lighten-3';
+                color = 'grey lighten-1';
                 break;
             case 'Flying':
-                color = 'blue lighten-3';
+                color = 'indigo lighten-3';
                 break;
             case 'Poison':
-                color = 'deep-purple accent-1';
+                color = 'purple darken-1';
+                break;
+            case 'Electric':
+                color = 'yellow lighten-1';
+                break;
+            case 'Ice':
+                color = 'light-blue lighten-3';
+                break;
+            case 'Fighting':
+                color = 'brown lighten-1';
+                break;
+            case 'Ground':
+                color = 'amber lighten-3';
+                break;
+            case 'Psychic':
+                color = 'pink lighten-2';
+                break;
+            case 'Rock':
+                color = 'orange lighten-4';
+                break;
+            case 'Ghost':
+                color = 'deep-purple darken-3';
+                break;
+            case 'Dragon':
+                color = 'indigo darken-2';
+                break;
+            case 'Dark':
+                color = 'brown darken-3';
+                break;
+            case 'Steel':
+                color = 'grey lighten-1';
+                break;
+            case 'Fairy':
+                color = 'purple accent-1';
                 break;
             default:
                 color = 'grey';
