@@ -117,4 +117,6 @@
     </div>
   </div>
 </form>
-<h3 *ngIf="!pokemon" class="center">No pokémon to edit...</h3>
+<h4 *ngIf='!pokemon' class='center'>
+  <pkmn-loader></pkmn-loader>
+</h4>
