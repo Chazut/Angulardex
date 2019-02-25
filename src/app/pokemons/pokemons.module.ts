@@ -12,6 +12,7 @@ import { EditPokemonComponent } from './edit-pokemon.component';
 import { PokemonFormComponent } from './pokemon-form.component';
 import { PokemonSearchComponent } from './search-pokemon.component';
 import { LoaderComponent } from '../loader.component';
+import { AuthGuard } from '../auth-guard.service';
 
 @NgModule({
 	imports: [
@@ -29,6 +30,6 @@ import { LoaderComponent } from '../loader.component';
 		BorderCardDirective,
 		PokemonTypeColorPipe
 	],
-	providers: [PokemonsService]
+	providers: [PokemonsService, AuthGuard]
 })
 export class PokemonsModule { }
