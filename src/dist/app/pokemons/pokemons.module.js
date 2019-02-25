@@ -17,6 +17,7 @@ const pokemon_type_color_pipe_1 = require("./pokemon-type-color.pipe");
 const pokemons_service_1 = require("./pokemons.service");
 const edit_pokemon_component_1 = require("./edit-pokemon.component");
 const pokemon_form_component_1 = require("./pokemon-form.component");
+const search_pokemon_component_1 = require("./search-pokemon.component");
 let PokemonsModule = class PokemonsModule {
 };
 PokemonsModule = __decorate([
@@ -31,6 +32,7 @@ PokemonsModule = __decorate([
             detail_pokemon_component_1.DetailPokemonComponent,
             edit_pokemon_component_1.EditPokemonComponent,
             pokemon_form_component_1.PokemonFormComponent,
+            search_pokemon_component_1.PokemonSearchComponent,
             border_card_directive_1.BorderCardDirective,
             pokemon_type_color_pipe_1.PokemonTypeColorPipe
         ],

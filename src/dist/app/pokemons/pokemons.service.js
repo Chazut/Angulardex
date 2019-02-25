@@ -28,6 +28,12 @@ let PokemonsService = class PokemonsService {
             return rxjs_1.of(result);
         };
     }
+    searchPokemons(term) {
+        if (!term.trim()) {
+            return rxjs_1.of([]);
+        }
+        return this.http.get(`${this.pokemonsUrl}/?name=${term}`).pipe(operators_1.tap(_ => this.log(`found pokemons matching "${term}"`)), operators_1.catchError(this.handleError('searchPokemons', [])));
+    }
     deletePokemon(pokemon) {
         const url = `${this.pokemonsUrl}/${pokemon.id}`;
         const httpOptions = {
