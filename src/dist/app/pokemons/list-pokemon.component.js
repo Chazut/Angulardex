@@ -19,7 +19,7 @@ let ListPokemonComponent = class ListPokemonComponent {
         this.title = "Angulardex";
     }
     ngOnInit() {
-        this.pokemons = this.pokemonsService.getPokemons();
+        this.pokemonsService.getPokemons().subscribe(pokemons => this.pokemons = pokemons);
     }
     selectPokemon(pokemon) {
         let link = ['/pokemon', pokemon.id];
