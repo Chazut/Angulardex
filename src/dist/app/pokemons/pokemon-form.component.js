@@ -21,6 +21,8 @@ let PokemonFormComponent = class PokemonFormComponent {
     ngOnInit() {
         // Initialisation de la propriété types
         this.types = this.pokemonsService.getPokemonTypes();
+        this.isAddForm = this.router.url.includes('add');
+        console.log(this.isAddForm);
     }
     // Détermine si le type passé en paramètres appartient ou non au pokémon en cours d'édition.
     hasType(type) {
@@ -55,7 +57,16 @@ let PokemonFormComponent = class PokemonFormComponent {
     // La méthode appelée lorsque le formulaire est soumis.
     onSubmit() {
         console.log("Submit form !");
-        this.pokemonsService.updatePokemon(this.pokemon).subscribe(() => this.goBack());
+        if (this.isAddForm) {
+            this.pokemonsService.addPokemon(this.pokemon).subscribe(pokemon => {
+                this.pokemon = pokemon;
+                this.goBack();
+            });
+        }
+        else {
+            this.pokemonsService.updatePokemon(this.pokemon)
+                .subscribe(_ => this.goBack());
+        }
     }
     goBack() {
         let link = ['/pokemon', this.pokemon.id];

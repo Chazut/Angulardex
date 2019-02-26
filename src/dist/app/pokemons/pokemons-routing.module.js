@@ -12,6 +12,7 @@ const list_pokemon_component_1 = require("./list-pokemon.component");
 const detail_pokemon_component_1 = require("./detail-pokemon.component");
 const edit_pokemon_component_1 = require("./edit-pokemon.component");
 const auth_guard_service_1 = require("../auth-guard.service");
+const add_pokemon_component_1 = require("./add-pokemon.component");
 // les routes du module Pokémon
 const pokemonsRoutes = [
     {
@@ -19,6 +20,7 @@ const pokemonsRoutes = [
         canActivate: [auth_guard_service_1.AuthGuard],
         children: [
             { path: 'all', component: list_pokemon_component_1.ListPokemonComponent },
+            { path: 'pokemon/add', component: add_pokemon_component_1.AddPokemonComponent },
             { path: 'edit/:id', component: edit_pokemon_component_1.EditPokemonComponent, canActivate: [auth_guard_service_1.AuthGuard] },
             { path: ':id', component: detail_pokemon_component_1.DetailPokemonComponent }
         ]

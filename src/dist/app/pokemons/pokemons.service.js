@@ -41,6 +41,12 @@ let PokemonsService = class PokemonsService {
         };
         return this.http.delete(url, httpOptions).pipe(operators_1.tap(_ => this.log(`deleted pokemon id=${pokemon.id}`)), operators_1.catchError(this.handleError('deletePokemon')));
     }
+    addPokemon(pokemon) {
+        const httpOptions = {
+            headers: new http_1.HttpHeaders({ 'Content-Type': 'application/json' })
+        };
+        return this.http.post(this.pokemonsUrl, pokemon, httpOptions).pipe(operators_1.tap((pokemon) => this.log(`added pokemon with id=${pokemon.id}`)), operators_1.catchError(this.handleError('addPokemon')));
+    }
     updatePokemon(pokemon) {
         const httpOptions = {
             headers: new http_1.HttpHeaders({ 'Content-Type': 'application/json' })

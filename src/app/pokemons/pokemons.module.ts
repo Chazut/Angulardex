@@ -13,6 +13,8 @@ import { PokemonFormComponent } from './pokemon-form.component';
 import { PokemonSearchComponent } from './search-pokemon.component';
 import { LoaderComponent } from '../loader.component';
 import { AuthGuard } from '../auth-guard.service';
+import { AuthService } from '../auth.service';
+import { AddPokemonComponent } from './add-pokemon.component';
 
 @NgModule({
 	imports: [
@@ -24,12 +26,13 @@ import { AuthGuard } from '../auth-guard.service';
 		ListPokemonComponent,
 		DetailPokemonComponent,
 		EditPokemonComponent,
-		PokemonFormComponent,
+		AddPokemonComponent,
 		PokemonSearchComponent,
+		PokemonFormComponent,
 		LoaderComponent,
 		BorderCardDirective,
 		PokemonTypeColorPipe
 	],
-	providers: [PokemonsService, AuthGuard]
+	providers: [PokemonsService, AuthGuard, AuthService]
 })
 export class PokemonsModule { }

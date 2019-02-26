@@ -20,6 +20,8 @@ const pokemon_form_component_1 = require("./pokemon-form.component");
 const search_pokemon_component_1 = require("./search-pokemon.component");
 const loader_component_1 = require("../loader.component");
 const auth_guard_service_1 = require("../auth-guard.service");
+const auth_service_1 = require("../auth.service");
+const add_pokemon_component_1 = require("./add-pokemon.component");
 let PokemonsModule = class PokemonsModule {
 };
 PokemonsModule = __decorate([
@@ -33,13 +35,14 @@ PokemonsModule = __decorate([
             list_pokemon_component_1.ListPokemonComponent,
             detail_pokemon_component_1.DetailPokemonComponent,
             edit_pokemon_component_1.EditPokemonComponent,
-            pokemon_form_component_1.PokemonFormComponent,
+            add_pokemon_component_1.AddPokemonComponent,
             search_pokemon_component_1.PokemonSearchComponent,
+            pokemon_form_component_1.PokemonFormComponent,
             loader_component_1.LoaderComponent,
             border_card_directive_1.BorderCardDirective,
             pokemon_type_color_pipe_1.PokemonTypeColorPipe
         ],
-        providers: [pokemons_service_1.PokemonsService, auth_guard_service_1.AuthGuard]
+        providers: [pokemons_service_1.PokemonsService, auth_guard_service_1.AuthGuard, auth_service_1.AuthService]
     })
 ], PokemonsModule);
 exports.PokemonsModule = PokemonsModule;
